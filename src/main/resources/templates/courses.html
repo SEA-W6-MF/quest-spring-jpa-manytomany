@@ -30,7 +30,7 @@
   <thead>
   <tr>
     <th>Id</th>
-    <th>Name</th>
+    <th>name</th>
     <th></th>
   </tr>
   </thead>
@@ -38,9 +38,12 @@
   <tr th:each="course : ${courses}">
     <td th:text="${course.id}">id</td>
     <td th:text="${course.name}">name</td>
-    <td><a th:href="@{/course/register(idCourse=${course.id})}">wizards</a></td>
+    <td><a th:href="@{/courseWizards(idCourse=${course.id})}">wizards</a></td>
   </tr>
   </tbody>
 </table>
+<br>
+<a href="/">Return to students list</a>
+
 </body>
 </html>
