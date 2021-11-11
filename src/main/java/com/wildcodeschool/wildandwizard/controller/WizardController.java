@@ -71,7 +71,7 @@ public class WizardController {
         return "courseWizards";
     }
     // ???????? War's das??????????
-    // Das war's noch nich !!!  :-)   :-)   :-)
+    // Das war's !!!  :-)   :-)   :-)
 
     @GetMapping("/wizard/register")
     public String getRegister(Model out,
